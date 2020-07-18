@@ -11,7 +11,7 @@ class product{
         console.log(`
         PL Number: ${this.plNumber}
         Name: ${this.name}
-        Dose: $(this.dose))
+        Dose: ${this.dose}
         Substance: ${this.substance}
         URL: ${this.url}
         `)
@@ -21,7 +21,7 @@ class product{
         return `
         PL Number: ${this.plNumber}
         Name: ${this.name}
-        Dose: $(this.dose))
+        Dose: ${this.dose}
         Substance: ${this.substance}
         URL: ${this.url}
         `
