@@ -1,5 +1,5 @@
 //const is used if you know the attribute is not going to change
-const {isProductPresent} = require("../index.js")
+const {getProduct} = require("../index.js")
 
 
 describe("Input handler", () => {
