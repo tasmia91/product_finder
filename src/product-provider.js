@@ -8,11 +8,11 @@ function getProductsData() {
   product5 = new product("PL818181", "name", "dose", "substance", "url");
   let products = [product1, product2, product3, product4, product5];
 
-  let productObjects = {};
+  let productObjects = {}
 
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
-    productObjects[product.plNumber] = product;
+    productObjects[product.plNumber] = product
   }
 
   return productObjects;
