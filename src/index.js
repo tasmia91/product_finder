@@ -1,13 +1,6 @@
 let readLine = require("readline")
-let getProductsData = require("./product-provider.js")
-
+let getProduct = require("./services/finder.js")
 let rl = readLine.createInterface(process.stdin, process.stdout)
-
-function getProduct(product) {
-  let productObjects = getProductsData()
-  return productObjects[product]
-}
-
 function inputHandler(answer) {
   if (answer === "Q") {
     rl.close()
@@ -22,6 +15,11 @@ function inputHandler(answer) {
     rl.question("Input your medical licence number or Q to quit:", inputHandler)
 }
 
-rl.question("Input your medical licence number or Q to quit:", inputHandler)
+function startUp() {
+  rl.question("Input your medical licence number or Q to quit:", inputHandler)
 
+
+}
+
+startUp()
 exports.getProduct = getProduct
