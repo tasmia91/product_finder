@@ -13,11 +13,14 @@ function inputHandler(answer, finder) {
     } else {
       console.log("Product doesn't exist ", answer)
     }
-      rl.question("Input your medical licence number or Q to quit:", inputHandler(finder))
+
+    getInput(finder)
   }
 
 function getInput(finder) {
-    rl.question("Input your medical licence number or Q to quit:", inputHandler(finder))
+    rl.question("Input your medical licence number or Q to quit:", (answer) => 
+    inputHandler(answer, finder)
+    )
 }
 
  module.exports = getInput
