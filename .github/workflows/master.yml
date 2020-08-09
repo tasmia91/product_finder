@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
-    - name: Clone repo
-    - uses: actions/checkout@v2
+    - name: Clone Repo
+      uses: actions/checkout@v2
 
     - name: Install
       working-directory: .
