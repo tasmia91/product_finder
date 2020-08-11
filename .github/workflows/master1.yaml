@@ -10,17 +10,17 @@ jobs:
     name: test
     runs-on: ubuntu-latest
      
-  steps: 
-    - name: Clone Repo
-      uses: actions/checkout@v2
+    steps: 
+      - name: Clone Repo
+        uses: actions/checkout@v2
 
-    - name: Install
-      working-directory: .
-      run: |
-        npm install
+      - name: Install
+        working-directory: .
+        run: |
+          npm install
 
 
-    - name: test
-      working-directory: .
-      run: |
-        npm test 
+      - name: test
+        working-directory: .
+        run: |
+          npm test 
