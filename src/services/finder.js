@@ -1,13 +1,12 @@
-  class ProductFinder {
-    constructor(dataSource){
-      this.dataSource = dataSource; 
-    }
-    
-    getProduct(product){
-      let productObjects = this.dataSource()
-      return productObjects[product]
-    }
+class ProductFinder {
+  constructor(dataSource) {
+    this.dataSource = dataSource;
   }
 
-  module.exports = ProductFinder
-  
+  getProduct(product) {
+    let productObjects = this.dataSource();
+    return productObjects[product];
+  }
+}
+
+module.exports = ProductFinder;
