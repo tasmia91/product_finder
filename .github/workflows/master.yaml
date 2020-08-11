@@ -2,7 +2,8 @@ name: master-build
 
 on:
   push:
-    branches: -"**"
+    branches:
+      - "**"
 
 jobs:
   build-and-test:
@@ -10,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone repo
+      - name: Clone Repo
         uses: actions/checkout@v2
 
       - name: Install
