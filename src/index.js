@@ -8,4 +8,4 @@ function startUp() {
   getInput(finder)
 }
 
-startUp()
+startUp() 
