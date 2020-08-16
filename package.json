@@ -5,15 +5,15 @@
   "main": "src/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "npm run watch & nodemon out index.js",
-    "start": "node out index.js",
+    "dev": "npm run watch & nodemon out/app-server.js",
+    "start": "node out/index.js",
     "test": "jest",
     "watch": "tsc --watch"
   },
-  "author": "",
+  "author": "apprentices",
   "license": "ISC",
   "devDependencies": {
-    "@type/jest": "^26.0.9",
+    "@types/jest": "^26.0.9",
     "jest": "^26.3.0",
     "mocha": "^8.0.1",
     "nodemon": "^2.0.4",
@@ -32,6 +32,6 @@
     ]
   },
   "dependencies": {
-    "typescript": "^3.9.7"
+    "express": "^4.17.1"
   }
 }
