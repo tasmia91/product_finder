@@ -1,15 +1,15 @@
 //const is used if you know the attribute is not going to change
-const product = require("./product.js")
+import Product from "./product"
 
 
 describe("Product class test", () => {
     test("can be created", () => {
-        let product1 = new product("plNumber", "name", "dose", "substance", "url")
+        let product1 = new Product("plNumber", "name", "dose", "substance", "url")
     expect(product1.plNumber).toBe("plNumber")
     }),
     test("can be created", () => {
         console.log = jest.fn();
-        let product1 = new product("plNumber", "name", "dose", "substance", "url")
+        let product1 = new Product("plNumber", "name", "dose", "substance", "url")
         let expectedOutput = `
         PL Number: plNumber
         Name: name
